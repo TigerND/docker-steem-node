@@ -10,6 +10,12 @@ if [[ ! -f /witness_node_data_dir/config.ini ]]; then
     echo "INFO: Sample config file is copied to your data dir."
 fi
 
+figlet Steem
+
+echo
+echo "$@"
+echo
+
 # Using the exec Bash command so that the final running application becomes 
 # the container’s PID 1. This allows the application to receive any Unix 
 # signals sent to the container. See the ENTRYPOINT help for more details.
