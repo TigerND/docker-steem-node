@@ -1,10 +1,12 @@
 #!/bin/bash
 set -e
 
-mkdir -p /witness_node_data_dir
+mkdir -p /steem/witness_node_data_dir
 
-if [[ ! -f /witness_node_data_dir/config.ini ]]; then
-    cp $FILESROOT/config.ini.sample /witness_node_data_dir/config.ini
+cd /steem
+
+if [[ ! -f /steem/witness_node_data_dir/config.ini ]]; then
+    cp $FILESROOT/config.ini.sample /steem/witness_node_data_dir/config.ini
     echo "INFO: Sample config file is copied to your data dir."
 fi
 
