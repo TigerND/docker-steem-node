@@ -3,8 +3,6 @@ set -e
 
 mkdir -p /witness_node_data_dir
 
-cd /witness_node_data_dir
-
 if [[ ! -f /witness_node_data_dir/config.ini ]]; then
     cp $FILESROOT/config.ini.sample /witness_node_data_dir/config.ini
     echo "INFO: Sample config file is copied to your data dir."
