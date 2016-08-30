@@ -3,6 +3,14 @@ set -e
 
 mkdir -p /steem/witness_node_data_dir
 
+if [[ -f /steem/config.ini ]]; then
+    if [[ ! -f /steem/witness_node_data_dir/config.ini ]]; then
+       mv /steem/config.ini /steem/witness_node_data_dir/config.ini
+    else
+       rm /steem/config.ini
+    fi
+fi
+
 cd /steem
 
 if [[ ! -f /steem/witness_node_data_dir/config.ini ]]; then
