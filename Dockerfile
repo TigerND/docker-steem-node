@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-FROM teego/steem-wallet:0.14.0-Ubuntu-xenial
+FROM teego/steem-wallet:0.14.1-Ubuntu-xenial
 
 MAINTAINER Aleksandr Zykov <tiger@mano.email>
 
